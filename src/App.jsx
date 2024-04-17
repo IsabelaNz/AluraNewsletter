@@ -1,5 +1,7 @@
+import Header from "./componentes/Header"
+
 const App = () => {
-  return <h1>te amo amor marcelo</h1>
+  return <Header/>
 }
 
 export default App
