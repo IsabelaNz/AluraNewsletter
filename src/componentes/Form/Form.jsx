@@ -1,3 +1,5 @@
+import Input from "../Input/Input"
+
 import React from "react";
 
 const Form = ({ onSubmit }) => {
@@ -10,10 +12,10 @@ const Form = ({ onSubmit }) => {
     };
 
     return (
-        <form onSubmit={safeSubmit} className=" h-full flex flex-col items-center justify-center gap-10 -mt-20">
-            <input type="text" className="dark:bg-dark-200 text-dark-200 dark:text-gray-200" placeholder="Insira seu nome..." />
-            <input type="email" placeholder="Insira seu e-mail..." />
-            <button type="submit" className="py-1 px-5 bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase">Seguir</button>
+        <form onSubmit={safeSubmit} className=" h-full flex flex-col items-center justify-center gap-10 -mt-20 mx-5">
+            <Input type="text" required placeholder="Insira seu nome..." />
+            <Input type="email" required placeholder="Insira seu e-mail..." />
+            <button type="submit" className="py-1 px-5 w-full max-w-sm bg-alura-100 dark:bg-dark-200 rounded-full text-gray-200 uppercase outline-none">Seguir</button>
         </form>
     );
 };
